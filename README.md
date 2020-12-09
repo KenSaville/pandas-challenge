@@ -66,6 +66,14 @@ sorted based on total purchases
  Made new data frame
  sorted based on counts (for popular) and total purchases (for profitable)
  
+## Trends
+
+Pymoli Trends
+
+The three clearest trends gleaned from the pymoli data were
+1.  Gender:  There was a clear gender preference, with a significant majority of players being male( 84% male, 14 % female and 2% Other/non-disclosing).
+2.  Age:  A significant majority of players were between the ages of 15 and 29, with 76.74% of players falling in this range.  The single highest range was 20-24, with 44.79% in this age range.
+3. Within the game, the 'Final critic' was the most purchased item (13) followed closely by 'Oathbreaker, Last hope of the Breaking storm' (12).  This was surprising, because clearly the fiery glass crusader is a much more powerful weapon.  Those depending on the Final Critic or Oathbreaker are doomed to banishment in the Icy Underworld of Pain and Suffering.
 
 
 
