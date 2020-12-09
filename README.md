@@ -11,6 +11,66 @@ amounts of purchases made in the game - of weapons, and other odd game items.  W
 The basic process in most analyses was to group the data by the category of interest (gender, age) using the gropby method, perform calculations on various subsets of the data (avg price, total count, etc), and display these results by category and / or sort them. 
 
 This was all done using jupyter notebook via jupyter lab in Anaconda.
+## player counts
+used .value_counts() on the names column (SN) to liste all names and number of times each was used
+used len() of this to get the number of unique players (576)
+
+## Purchasing Analysis
+
+Here I used groupby, count(), and len(value_counts) to calculate number of unique items, avg price per item, ttotal revenue, total numer of purchases
+
+## Gender Demographics
+
+First removed duplicate names by sorting and using remove_duplicates
+grouped unique data frame by gender
+calculated avg price, count, total purchased.  All by gender
+
+for example
+
+gender_count = gby_gender_uniq['SN'].count()
+
+Gender
+Female                    81
+Male                     484
+Other / Non-Disclosed     11
+Name: SN, dtype: int64
+
+then to access specific values I used subscripts (gender_count[0] for female value, etc.)
+
+## Gender Purchasing Analysis
+
+Generally the same as above, but selected and analyzed data based on purchase price
+
+## Age demographics
+
+Here - made uniq dataframe again by sorting and removing duplicates.  Could have used the same one as a bobe, but this made it more explicit.
+
+I then 'binned' the data based on age ranges.  To do this I used the cut function, and labeled accordingly.
+
+Then grouped by age ranges and calculated values based on columns in the group by object.
+
+## Purchasing Analysis by Age
+
+Same as above, but focused on price
+
+## Top spenders
+
+grouped by name ('SN') didn't make it unique, as I wanted to add up all purchases for each name.
+The group by function grouped the data by name, then various quantities were calculated on the appropriate column (e.g. grouped_by_name \['Price'].mean()
+added values to new data frame
+sorted based on total purchases
+
+## Popular items and profitable items
+ Grouped by item ID
+ calculated counts and total purchases
+ Made new data frame
+ sorted based on counts (for popular) and total purchases (for profitable)
+ 
+
+
+
+
+
 
 
  
